@@ -1,12 +1,12 @@
 $(document).ready(function () {
     const planos = [
-        { nome: 'Básico', valor: 'R$50' },
-        { nome: 'Intermediário', valor: 'R$80' },
-        { nome: 'Avançado', valor: 'R$120' },
-        { nome: 'Super', valor: 'R$200' }
+        { nome: 'Controle 8GB', valor: 'R$XX,XX' },
+        { nome: 'Plano pós', valor: 'R$XX,XX' },
+        { nome: 'Fámilia II', valor: 'R$XX,XX' },
+        { nome: 'Fámilia V', valor: 'R$XX,XX' }
     ];
     const group = `<div class='mb-3 d-flex justify-content-center align-items-center group'>
-            <select class='form-select me-2'>
+            <select class='form-select me-2' role='button'>
                 <option value='' selected disabled>Selecione o plano</option>
             </select>
             <button class='addPlan btn btn-success p-0'>+</button>
