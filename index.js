@@ -1,7 +1,7 @@
 const { app, BrowserWindow  } = require('electron');
 const electronReload = require('electron-reload');
 const path = require('path');
-const fs = require('fs');
+
 
 let mainWindow;
 require('electron-reload')(__dirname, {
