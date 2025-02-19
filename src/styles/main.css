@@ -1,0 +1,20 @@
+body{
+    background-color: rgba(24, 24, 24, 1);
+}
+.container{
+    background-color: rgba(42, 42, 42, 1);
+    border-radius: 8px;
+    padding: 14px 12px;
+}
+.container button{
+    width: 55px;
+    height: 40px;
+    margin: 0 4px;
+}
+.btn-light{
+    border: 1px solid black;
+}
+.container .group {
+    flex-shrink: 0; /* Evita que o item encolha */
+    min-height: auto; /* Evita redimensionamento */
+}
