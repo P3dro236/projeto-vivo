@@ -19,7 +19,6 @@ $(document).ready(function () {
             $(select).append(`<option value="${plano.nome}">${plano.nome} - ${plano.valor}</option>`);
         });
     }
-
     atualizarPlanos($(".group select").first());
     $(".container").on("click", ".addPlan", function() {
         let newGroup = $(group); 
