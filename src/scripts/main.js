@@ -10,15 +10,15 @@ $(document).ready(function () {
             <button class='removePlan btn btn-danger p-0'>-</button>
         </div>`;
 
-    // Usar jQuery para garantir que os novos elementos sejam manipuláveis
+
     $(".container").on("click", ".addPlan", function() {
-        let newGroup = $(group);  // Criação do novo grupo com jQuery
-        $(".container").append(newGroup);  // Adicionando o novo grupo à página
+        let newGroup = $(group);
+        $(this).closest(".group").after(newGroup)
     });
 
     $(".container").on("click", ".removePlan", function() {
         if ($(".group").length > 1) {
-            $(this).closest(".group").remove();  // Removendo o grupo clicado
+            $(this).closest(".group").remove();
         } else{
             alert("Você não pode remover o último plano!");
         }
