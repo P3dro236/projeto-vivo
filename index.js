@@ -7,7 +7,6 @@ let mainWindow;
 require('electron-reload')(__dirname, {
     electron: path.join(__dirname, 'node_modules', '.bin', 'electron')
 });
-
 app.whenReady().then(() => {
 
     mainWindow = new BrowserWindow({
