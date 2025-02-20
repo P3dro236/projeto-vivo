@@ -22,6 +22,3 @@ export function removerPlano() {
         alert("É necessário ter ao menos um plano!");
     }
 }
-export function gerarPdf(){
-    console.log($("select").val())
-}

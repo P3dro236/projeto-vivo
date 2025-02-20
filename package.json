@@ -11,8 +11,7 @@
   },
   "devDependencies": {
     "electron": "^34.2.0",
-    "electron-reload": "^2.0.0-alpha.1",
-    "pdfkit": "^0.16.0"
+    "electron-reload": "^2.0.0-alpha.1"
   },
   "keywords": [],
   "dependencies": {
