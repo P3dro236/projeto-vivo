@@ -6,29 +6,57 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" crossorigin="anonymous"> 
     <title>Planos Selecionados</title>
     <style>
+        h5{
+            line-height: 0.8rem !important;
+        }
         .card-body{
             height: 220px;
         }
         .card-header{
             padding: 8px;
+            height: 48px;
+        }
+        .card {
+            width: 100%;
+            height: 290px; 
+            border: 1.5px solid black;
+        }
+        @media print {
+            @page {
+                margin: 0;
+                size: A4 landscape;
+            }
+            body {
+                margin: 0;
+                transform: scale(1); /* Ajuste o valor se necessário, por exemplo, 0.75 */
+                transform-origin: top center;
+                overflow: hidden; /* Evita overflow que possa gerar página extra */
+            }
+            /* Evite quebras de página dentro das seções críticas */
+            #container, .contact, h1 {
+                page-break-inside: avoid;
+            }
+            header, footer {
+                display: none;
+            }
+            #printButton{
+                display: none;
+            }
         }
     </style>
 </head>
-<body class="p-4">
-    <h1 class="text-center mb-3">Planos Selecionados</h1>
+<body class="p-1">
+    <h1 class="text-center mb-2 text-decoration-underline">Planos Selecionados</h1>
     <div id="container" class="container mb-4">
         <div class="row" id="plans">
-
         </div>
     </div>
-    </div>
     <div class="contact text-center">
-        <h5>Pedro Henrique Gonçalves</h5>
-        <span>Whatsapp: (034)99158-3447</span>
+        <h5 class="text-decoration-underline">Pedro Henrique Gonçalves</h5>
+        <h5 class="text-decoration-underline">Whatsapp: (034)99158-3447</h5>
     </div>
-
-    <div class="text-center mt-3">
-        <button id="printPage" class="btn btn-primary">Imprimir Página</button>
+    <div class="text-center mt-3" id="printButton">
+        <button id="printPage" class="p-4 fs-1 text-decoration-underline btn btn-dark w-50">Imprimir Página</button>
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>

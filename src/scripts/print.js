@@ -1,24 +1,23 @@
-document.addEventListener('DOMContentLoaded', () => {
+$(document).ready(function() {
     const selectedPlans = JSON.parse(localStorage.getItem('selectedPlans'));
-    const plansContainer = document.getElementById('plans');
+    const $plansContainer = $('#plans');
+    if(selectedPlans.length !== 8){
+        do {
+            const temp = {
+                nome: "",
+                valor: "",
+                caracteristicas: ""
+            };
+            selectedPlans.push(temp);
+        } while (selectedPlans.length < 8);
+    }
 
-    do{
-        const temp = {
-            nome: "",
-            valor: "",
-            caracteristicas: ""
-        }
-        selectedPlans.push(temp)
-    } while (selectedPlans.length <= 7 )
-
-    if (selectedPlans && plansContainer) {
+    if (selectedPlans && $plansContainer.length) {
         selectedPlans.forEach(plan => {
-            const planElement = document.createElement('div');
-            planElement.classList.add('col-3');
-            planElement.innerHTML = `
+            const $planElement = $('<div>', { class: 'col-3' }).html(`
                 <div class="card m-3">
                     <div class="card-header">
-                        <h3 class="text-center">${plan.nome}</h3>
+                        <h3 class="text-center fs-4">${plan.nome}</h3>
                     </div>
                     <div class="card-body text-center">
                         ${plan.caracteristicas}
@@ -27,8 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
                         <span>Valor: ${plan.valor}</span>
                     </div>
                 </div>
-            `;
-            plansContainer.appendChild(planElement);
+            `);
+            $plansContainer.append($planElement);
         });
     }
+    $("#printPage").on("click", () =>{
+        window.print();
+    })
 });
