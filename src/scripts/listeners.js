@@ -1,5 +1,5 @@
 // listeners.js
-import { adicionarPlano, removerPlano } from './buttons.js';
+import { adicionarPlano, removerPlano, gerarPdf } from './buttons.js';
 import { planos } from './plans.js';
 
 export function atualizarPlanos(select, planos) {
@@ -24,4 +24,7 @@ export function adicionarListeners() {
     $(".container").on("click", ".removePlan", function() {
         removerPlano.call(this);
     });
+    $("#createFile").on("click", function(){
+        gerarPdf.call(this)
+    })
 }

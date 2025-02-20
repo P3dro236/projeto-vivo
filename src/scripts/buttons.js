@@ -7,8 +7,13 @@ export function atualizarPlanos(select, planos) {
 }
 export function adicionarPlano(groupSelector, planos) {
     let newGroup = $(groupSelector); 
-    $(this).closest(".group").after(newGroup);
-    atualizarPlanos(newGroup.find("select"), planos);
+    
+    if($(".group").length < 8){
+        $(this).closest(".group").after(newGroup);
+        atualizarPlanos(newGroup.find("select"), planos);
+    } else{
+        alert("Limite de planos atingido!");
+    }
 }
 export function removerPlano() {
     if ($(".group").length > 1) {
@@ -16,4 +21,7 @@ export function removerPlano() {
     } else {
         alert("É necessário ter ao menos um plano!");
     }
+}
+export function gerarPdf(){
+    console.log($("select").val())
 }
