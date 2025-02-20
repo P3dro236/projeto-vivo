@@ -18,3 +18,6 @@ body{
     flex-shrink: 0; /* Evita que o item encolha */
     min-height: auto; /* Evita redimensionamento */
 }
+select{
+    cursor: pointer;
+}
