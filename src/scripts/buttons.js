@@ -3,6 +3,7 @@ function adicionarPlano(groupSelector, planos) {
         let newGroup = $(groupSelector); 
         $(this).closest(".group").after(newGroup);
         atualizarPlanos(newGroup.find("select"), planos);
+        
     } else {
         alert("Número máximo de planos atingido!");
     }

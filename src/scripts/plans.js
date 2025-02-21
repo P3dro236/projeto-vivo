@@ -1,3 +1,20 @@
+export const devices = [
+    { nome: 'iPhone 13', valor: 'R$XX,XX', caracteristicas: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident exercitationem vel in nam doloremque neque!' },
+    { nome: 'Samsung Galaxy S21', valor: 'R$XX,XX', caracteristicas: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident exercitationem vel in nam doloremque neque!' },
+    { nome: 'Google Pixel 6', valor: 'R$XX,XX', caracteristicas: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident exercitationem vel in nam doloremque neque!' },
+    { nome: 'OnePlus 9', valor: 'R$XX,XX', caracteristicas: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident exercitationem vel in nam doloremque neque!' },
+    { nome: 'Xiaomi Mi 11', valor: 'R$XX,XX', caracteristicas: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident exercitationem vel in nam doloremque neque!' },
+    { nome: 'Sony Xperia 5', valor: 'R$XX,XX', caracteristicas: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident exercitationem vel in nam doloremque neque!' },
+    { nome: 'Huawei P40', valor: 'R$XX,XX', caracteristicas: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident exercitationem vel in nam doloremque neque!' },
+    { nome: 'Nokia 8.3', valor: 'R$XX,XX', caracteristicas: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident exercitationem vel in nam doloremque neque!' },
+    { nome: 'Motorola Edge', valor: 'R$XX,XX', caracteristicas: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident exercitationem vel in nam doloremque neque!' },
+    { nome: 'LG Velvet', valor: 'R$XX,XX', caracteristicas: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident exercitationem vel in nam doloremque neque!' },
+    { nome: 'Asus ROG Phone 5', valor: 'R$XX,XX', caracteristicas: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident exercitationem vel in nam doloremque neque!' },
+    { nome: 'Realme GT', valor: 'R$XX,XX', caracteristicas: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident exercitationem vel in nam doloremque neque!' },
+    { nome: 'Oppo Find X3', valor: 'R$XX,XX', caracteristicas: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident exercitationem vel in nam doloremque neque!' },
+    { nome: 'Vivo X60', valor: 'R$XX,XX', caracteristicas: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident exercitationem vel in nam doloremque neque!' },
+    { nome: 'ZTE Axon 30', valor: 'R$XX,XX', caracteristicas: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident exercitationem vel in nam doloremque neque!' },
+];
 export const planos = [
     { nome: 'Controle 8GB', valor: 'R$XX,XX', caracteristicas: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident exercitationem vel in nam doloremque neque!' },
     { nome: 'Plano pós', valor: 'R$XX,XX', caracteristicas: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident exercitationem vel in nam doloremque neque!' },

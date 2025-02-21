@@ -7,10 +7,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron index.js"
+    "start": "electron index.js",
+    "build": "electron-builder"
   },
   "devDependencies": {
     "electron": "^34.2.0",
+    "electron-builder": "^25.1.8",
     "electron-reload": "^2.0.0-alpha.1"
   },
   "keywords": [],

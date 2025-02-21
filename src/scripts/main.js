@@ -1,8 +1,9 @@
 // main.js
-import { planos } from './plans.js';
-import { atualizarPlanos, adicionarListeners } from './listeners.js';
+import { planos, devices } from './plans.js';
+import { atualizarPlanos,atualizarAparelhos, adicionarListeners } from './listeners.js';
 
 $(document).ready(function () {
-    atualizarPlanos($(".group select").first(), planos);
+    atualizarPlanos($(".group #devices").first(), devices);
+    atualizarAparelhos($(".group #planos").first(), planos);
     adicionarListeners();
 });
